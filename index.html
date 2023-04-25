@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>MVP - Tairik</title>
+</head>
+
+<body>
+    <header>
+        <div class="title">
+            <h2>Lista de Pets</h2>
+        </div>
+        <div class="banner">
+            <img src="https://images.contentstack.io/v3/assets/blt6f84e20c72a89efa/bltbdc99f8d9f97dc4c/6261d4d11677fc28cf2347da/common-dog-surgical-procedures-img_article-head.jpg?width=1200&height=630&fit=crop"
+                alt="y">
+        </div>
+    </header>
+
+     <section class="newPetSection">
+        <input type="text" id="newPet" placeholder="Adicionar novo Pet:">
+        <input type="text" id="newPeso" placeholder="Peso:">
+        <select id="newType" onchange="changePetType()">
+            <option value="Dog">Cão</option>
+            <option value="Cat">Gato</option>
+        </select>
+        <span onclick="newPet()" class="addBtn">Adicionar</span>
+    </section>
+
+     <section class="animal" id="sectionDogs">
+        <table id="myDogs">
+            <tr>
+                <th class="idColumn">Id</th>
+                <th>Nome</th>
+                <th>Dog</th>
+                <th>Peso (Kg)</th>
+                <th>NEM</th>
+                <th><img src="https://cdn-icons-png.flaticon.com/512/126/126468.png" width="15px" height="15px"></th>
+            </tr>
+        </table>
+    </section>
+
+     <section class="animal" id="sectionCats" style="display: none">
+        <table id="myCats">
+            <tr>
+                <th class="idColumn">Id</th>
+                <th>Nome</th>
+                <th>Cat</th>
+                <th>Peso (Kg)</th>
+                <th>NEM</th>
+                <th><img src="https://cdn-icons-png.flaticon.com/512/126/126468.png" width="15px" height="15px"></th>
+            </tr>
+        </table>
+    </section>
+    <br><br><br><br>
+    <script src="scripts.js"></script>
+</body>
+
+</html>
